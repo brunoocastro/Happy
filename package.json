@@ -10,8 +10,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "crypto": "^1.0.1",
     "express": "^4.17.1",
     "hbs": "^4.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "nodemailer": "^6.4.14",
+    "nodemailer-express-handlebars": "^4.0.0",
     "nodemon": "^2.0.5",
     "sqlite-async": "^1.1.0"
   }

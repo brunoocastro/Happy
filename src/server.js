@@ -13,15 +13,15 @@ server
   .use(express.static("public"))
 
   // Configurando template engine
-  .set('views', path.join(__dirname, "views"))
-  .set('view engine', 'hbs')
+  .set("views", path.join(__dirname, "views"))
+  .set("view engine", "hbs")
 
   // Rotas da aplicação
   .get("/", pages.index)
   .get("/orphanage", pages.orphanage)
   .get("/orphanages", pages.orphanages)
   .get("/create-orphanage", pages.createOrphanage)
-  .post('/save-orphanage', pages.saveOrphanage)
-
+  .post("/save-orphanage", pages.saveOrphanage)
+  .get("/city", pages.city);
 
 server.listen(5500);

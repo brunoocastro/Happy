@@ -48,7 +48,7 @@ module.exports = {
     const fields = req.body;
 
     // Validar de os fields estão preenchidos
-    if (Object.values(fields).includes('')) {
+    if (Object.values(fields).includes("")) {
       return res.send("Todos os campos devem ser preenchidos!");
     }
 
@@ -68,10 +68,14 @@ module.exports = {
       });
 
       // Redirecionamento
-      return res.redirect('/orphanages')
+      return res.redirect("/orphanages");
     } catch (err) {
       console.log(err);
       return res.send("Erro no banco de dados!");
     }
+  },
+
+  city(req, res) {
+    return res.render("city");
   },
 };
